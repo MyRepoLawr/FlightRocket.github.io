@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: black;
+}
+.space {
+    display: flex;
+    position: fixed;
+    float: left;
+    height: 100%;
+    width: 100%;
+    background: url("space.png") center no-repeat;
+    background-size: cover;
+}
+.space .planet-area {
+    display: flex;
+    position: relative;
+}
+.planet-area .planet{
+    position: absolute;
+    height: 80%;
+    width: auto;
+    transform: translate(0, 30%);
+    overflow: hidden;
+    z-index: 2;
+}
+.planet-area .rocket {
+    position: absolute;
+    height: 20%;
+    width: auto;
+    transform: translate(300px, 270px) rotate(30deg);
+    z-index: 1;
+}
+.control-panel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid rgba(101, 87, 101, 0.59);
+    width: 500px;
+    height: 350px;
+    background-color:#556;
+    background-image: linear-gradient(30deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
+    linear-gradient(150deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
+    linear-gradient(30deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
+    linear-gradient(150deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
+    linear-gradient(60deg, #99a 25%, transparent 25.5%, transparent 75%, #99a 75%, #99a),
+    linear-gradient(60deg, #99a 25%, transparent 25.5%, transparent 75%, #99a 75%, #99a);
+    background-size:80px 140px;
+    background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
+    transform: translate(600px, 300px);
+}
+
+.control-panel__inner {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 5px 5px 5px;
+    border: 2px solid blue;
+    background: radial-gradient(rgba(0, 149, 255, 0.93), rgba(221, 0, 255, 0.93), rgba(0, 149, 255, 0.74), #2a97e5);
+    width: 450px;
+    height: 300px;
+
+}
+.control-panel input[type=password] {
+    width: 70%;
+    height: 40px;
+    margin-top: 5px;
+    background: #bdb7b7;
+    color: #0c0b0b;
+}
+.control-panel input[type=password]:focus  {
+    background-color: #43f507;
+}
+.control-panel #ok {
+    width: 60px;
+    height: 40px;
+    margin-top: 5px;
+    margin-left: auto;
+    background: #f7ff00;
+    color: #0c0b0b;
+}
+.control-panel #ok:focus {
+    background-color: #43f507;
+}
+.control-panel .launch {
+    width: 70px;
+    height: 40px;
+    margin-top: -20px;
+    margin-left: 185px;
+    border-radius: 45% ;
+    background: #f7ff00;
+    color: #0c0b0b;
+}
+.control-panel .launch:focus {
+    background-color: #f50707;
+    color: white;
+}
+.control-panel .check-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 60px;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 45px;
+    margin-bottom: 155px;
+}
+.control-panel .check-buttons input[type=checkbox]{
+    display: flex;
+    width: 20px;
+    height: 20px;
+    padding: 5px 5px;
+    margin-top: 20px;
+    margin-right: auto;
+}
+.control-panel .levers {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 130px;
+    margin-top: -160px;
+    padding: 5px 5px;
+}
+.control-panel .levers input[type=range] {
+    display: flex;
+    width: 100%;
+    height: 120px;
+    margin: auto;
+    -webkit-appearance: slider-vertical;
+}
