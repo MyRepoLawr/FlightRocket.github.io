@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Open Space</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <div class="space">
+        <div class="planet-area">
+            <img src="mars.png" alt="Mars" class="planet">
+            <img src="rocket.png" alt="Rocket" class="rocket">
+        </div>
+        <div class="control-panel">
+            <div class="control-panel__inner">
+                <input type="password" id="password" name="password">
+                <input type="button" value="Ok" id="ok">
+                    <div class="check-buttons">
+                        <input type="checkbox" onchange="Click1()" name="checkbox" disabled="disabled">
+                        <input type="checkbox" onchange="Click1()" name="checkbox" disabled="disabled">
+                        <input type="checkbox" onchange="Click1()" name="checkbox" disabled="disabled">
+                        <input type="checkbox" onchange="Click1()" name="checkbox" disabled="disabled">
+                        <input type="checkbox" onchange="Click1()" name="checkbox" disabled="disabled">
+                        <input type="checkbox" onchange="Click1()" name="checkbox" disabled="disabled">
+                    </div>
+                    <div class="levers">
+                        <input type="range" onchange="Click1()" name="range" min="0" max="100" disabled="disabled">
+                        <input type="range" onchange="Click1()" name="range" min="0" max="100" disabled="disabled">
+                        <input type="range" onchange="Click1()" name="range" min="0" max="100" disabled="disabled">
+                        <input type="range" onchange="Click1()" name="range" min="0" max="100" disabled="disabled">
+                        <input type="range" onchange="Click1()" name="range" min="0" max="100" disabled="disabled">
+                    </div>
+                <input type="button" value="launch" class="launch" disabled="disabled">
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
